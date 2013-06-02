@@ -24,11 +24,18 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-image:url('../img/mainscreen.png');
-    background-color:#cccccc;
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -38,17 +45,9 @@ body {
     width:100%;
 }
 
-#centered_div {
-    width: 60px; height: 20px; position: absolute; top: 50%; left: 50%; margin-left: -30px; margin-top: -10px;
-}
-#pickup_label {
-    width: 60px; height: 20px; position: absolute; top: 50%; left: 50%; margin-left: -30px; margin-top: -10px;
-}
-
-
 /* Portrait layout (default) */
 .app {
-    background:url(../img/mainscreen.png) no-repeat center top; /* 170px x 200px */
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
